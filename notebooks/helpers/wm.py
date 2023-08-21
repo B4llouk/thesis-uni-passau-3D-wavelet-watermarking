@@ -32,4 +32,8 @@ def retrieveWm(original_data, watermarked_coeffs, wavelet, alpha):
     
     return retrieved_watermark
 
+def recreate2Dwm(watermark3D):
+    return np.mean(watermark3D, axis=0)
+
+
 

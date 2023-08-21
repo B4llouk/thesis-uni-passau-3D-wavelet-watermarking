@@ -1,65 +1,21 @@
-# thesis
+# 3D WATERMARKING THROUGH DISCRETE TRANSFORMS
+This repo contains the source code developed as part of the thesis work for Mohamed Bellakhal (CS MASTER STUDENT AT UNI PASSAU), student ID 108852. 
 
-attacks: 
-additive noise as distortion.
- rescaling/stretching 
+## data: 
+This directory contains the data used/generated during the thesis. Such as 3D automotive models in npy directory. 3D plots for experimentation and an example of the generated QR Code. 
 
+## notebooks 
+This directory contains the implementation of our thesis work as python scripts and Jupyter notebooks. In this directory we note: 
 
-quality: how much does the watermark distort the image and is it acceptable 
+### helpers 
+This module was implemented to avoid repeating code while developing the several notebooks. It contains basic functions that we developed  to handle wavelet operations, metrics, plots, qr code generation and watermarking. 
 
-Peak signal to noise ratio (PSNR):
-Where Mean Square Error (MSE) is given by the equation (6) as 
-2.5.2.Normalized correlation(NC): 
+### notebooks labeled as draft/intro 
+These notebooks are for experimentation and do not contain end results. 
 
+### notebooks containing pywt /DCT 
+These Jupyter notebooks contain the result of our work and are applying 3D watermarking using Discrete Transforms while varying the circumstances (the type of the transform, the intensity of the watermark, the vanshing moment etc..) 
 
-
-
-
-
-
-read and understand about different types of wavelets 
-automate application (lots of wavelets and different modes) => lots of output data 
-save outpyt data and use it later in results 
-
-
-
-watermark retrieval: retrieve 3d and go through each one and see to which website they lead 
-
-metrics metrics metrics 
-study which signal mode is better ( asymmetric, near symmetric, symmetric)
-which number of  vanishing moments is best
-
-
-
-
-
-create github repository 
-see papers 
-find logical explanation for multiplication mess up 
-
-
-
-3/ Need to establish a concise state of the art 
-
-4/ need to code a process that gets 3D watermark and search for a link by going through all 2D QR codes 
-
-5/ Code tabular results that allow us to have dictionaries as watermarkings results and then compare automatically the metrics 
-
-we can do different transforms, try to perfect the results and compare  => using discret transforms 
-
-
-
-
-
-
-Done so far: 
-implemented watermark multiplying 
-implemented watermark addition 
-watermark retrieval 
-histograms 
-cleaned code with helper scripts 
-Data viz 
-watermark with wvt 
-
-
+### block implementation 
+Block implementation notebook contains the implementation of the 3D watermarking on an array of 3D images using an array of wavelet transforms. In this notebook we try to watermark & evaluate the results of all circumstances(all possible discrete transfrms and their variations) in parallel using python lists and dictionaries. 
 

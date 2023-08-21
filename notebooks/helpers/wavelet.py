@@ -3,7 +3,7 @@ import pywt
 import helpers.wm
 
 # add the watermark to coefficients
-def embedWatermarkAddition(original_data, watermark, wavelet, alpha, mode):
+def embedWatermarkAddition(original_data, watermark, wavelet, alpha):
     # Perform 3D DWT on the original data
     coefficients = pywt.dwtn(original_data, wavelet, mode='symmetric', axes=None)
 
@@ -17,7 +17,7 @@ def embedWatermarkAddition(original_data, watermark, wavelet, alpha, mode):
     scaledWm = np.multiply(resizedWatermark, alpha)
 
     # Embed the watermark by adding it to the approximation coefficients
-    watermarked_coeffs = approx_coeffs + scaledWm
+    watermarked_coeffs = approx_coeffs + scaledWm 
 
     # Create a new dictionary with the watermarked coefficients
     watermarked_coeffs_dict = dict(coefficients)
@@ -32,4 +32,6 @@ def reconstructWmVolume(watermarked_coeffs, wavelet):
     watermarked_data = pywt.idwtn(watermarked_coeffs, wavelet, mode='symmetric', axes=None)
     return watermarked_data
 
-    
+
+def wavelist():
+    return pywt.wavelist(kind='discrete')
