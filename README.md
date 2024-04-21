@@ -1,5 +1,10 @@
 # 3D WATERMARKING THROUGH DISCRETE TRANSFORMS
-This repo contains the source code developed as part of the thesis work for Mohamed Bellakhal (CS MASTER STUDENT AT UNI PASSAU), student ID 108852. 
+This repo contains the source code developed as part of the thesis work for Mohamed Bellakhal (CS MASTER STUDENT AT UNI PASSAU) 
+
+## contact the author: 
+bellak01@ads.uni-passau.de 
+bellakhalmohamed79@gmail.com
++491783045692
 
 ## data: 
 This directory contains the data used/generated during the thesis. Such as 3D automotive models in npy directory. 3D plots for experimentation and an example of the generated QR Code. 
